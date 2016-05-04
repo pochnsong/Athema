@@ -1,0 +1,19 @@
+.cms .module{
+    display: table;
+    border: 2px solid #f8f8f8;
+    padding: 10px;
+    width: 100%;
+}
+.cms .module a{
+    display: table-cell;
+    background-color: #00a2e8;
+    color: #fff;
+    text-decoration: none;
+    height: 150px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+}
+.cms .module a:hover{
+    background-color: #5ec1ea;
+}

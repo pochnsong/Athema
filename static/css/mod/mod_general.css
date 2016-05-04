@@ -1,0 +1,41 @@
+.about {
+  padding: 20px 0;
+  background-color: #fff;
+  min-height: 500px;
+}
+.about p {
+  margin: 28px 8%;
+  margin: 2rem 8%;
+  font-size: 100%;
+
+  text-indent: 52px;
+  text-indent: 3rem;
+  line-height: 52px;
+  line-height: 3rem;
+}
+.ssk-show {
+  height: auto;
+  overflow: hidden;
+  transition: 1s all linear;
+  -moz-transition: 1s all linear;
+  /* Firefox 4 */
+  -webkit-transition: 1s all linear;
+  /* Safari 和 Chrome */
+  -o-transition: 1s all linear;
+  /* Opera */
+}
+.ssk-show img {
+  margin-top: -5%;
+  width: 100%;
+}
+.page {
+  padding-bottom: 2rem;
+}
+.page img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .ssk-show {
+    height: 300px;
+  }
+}

@@ -1,0 +1,56 @@
+{% extends 'shared/base.html' %}
+
+{% block body %}
+    <form method="post">{% csrf_token %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+        <div>单选题</div>
+            {% for x in choice_s %}
+                <div><strong>{{ forloop.counter }}. {{ x.title }}</strong></div>
+                <div class="checkbox">
+                    <label><input name="test-choice-{{ x.pk }}" value="A" type="radio">A:{{ x.answer_1 }}</label>
+                    <label><input name="test-choice-{{ x.pk }}" value="B" type="radio">B:{{ x.answer_2 }}</label>
+                    <label><input name="test-choice-{{ x.pk }}" value="C" type="radio">C:{{ x.answer_3 }}</label>
+                    <label><input name="test-choice-{{ x.pk }}" value="D" type="radio">D:{{ x.answer_4 }}</label>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+        <div>多选题</div>
+            {% for x in choice_m %}
+                <div><strong>{{ forloop.counter }}. {{ x.title }}</strong></div>
+                <div class="checkbox">
+                    <label><input name="test-choice-{{ x.pk }}" value="A" type="checkbox">A:{{ x.answer_1 }}</label>
+                    <label><input name="test-choice-{{ x.pk }}" value="B" type="checkbox">B:{{ x.answer_2 }}</label>
+                    <label><input name="test-choice-{{ x.pk }}" value="C" type="checkbox">C:{{ x.answer_3 }}</label>
+                    <label><input name="test-choice-{{ x.pk }}" value="D" type="checkbox">D:{{ x.answer_4 }}</label>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+        <div>填空题</div>
+            {% for x in fillblank %}
+                <div><strong>{{ forloop.counter }}. {{ x.title }}</strong></div>
+                <div>
+                    <label>答案</label>
+                    <input name="test-fill-{{ x.pk }}" type="text" placeholder="填入正确答案，不区分大小写">
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+        <div class="row">
+            <div class="col-md-12">
+                <input type="submit" class="btn btn-success" value="交卷">
+            </div>
+        </div>
+</div>
+
+    </form>
+{% endblock %}

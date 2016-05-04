@@ -1,0 +1,17 @@
+#注释
+*.pyc
+.git
+.idea
+server
+*.log
+*.pid
+*.sock
+README.md
+tests
+.coverage
+htmlcov
+migrations
+db_
+fabfile.py
+^fab$
+product_video

@@ -1,0 +1,119 @@
+//@style-blue-background:#1D365D;
+@bg-body: #fff;
+@bg: #1E92CE;//rgb(27, 67, 90);
+@bg0: #EBF2F9;
+@bg1: #21a1e3;
+@bg2: #1c89c2;
+@font:#fff;
+@font-shadow: rgba(255,255,255,0.3);
+//@bg: #2D4A8C;
+
+
+.search-container{
+  padding: 20px;
+  height: 80px;
+  width: 100%;
+  padding-left: 60px;
+  position: relative;
+}
+.search-container .search-input{
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  border: none;
+  height: 40px;
+  padding: 0 10px;
+  margin-left: -40px;
+  float: left;
+}
+.search-container .search-btn{
+  display: block;
+  background-color: transparent;
+  border: 1px solid @font;
+  width: 40px;
+  height: 40px;
+  color: @font;
+  border-radius: 0 5px 5px 0;
+  float: left;
+}
+
+.search-container .search-btn:hover{
+  background-color: rgba(0,0,0,0.1);
+}
+
+//产品目录
+.product-set{
+  display: block;
+  background-color:  inherit ;
+  position: relative;
+  margin-bottom: 5px;
+  overflow: hidden;
+  //color: @font;
+
+}
+.product-set:hover{
+  //color: @font;
+  color: inherit;
+}
+.product-set .img-bar{
+  height: 100%;
+  display: block;
+  position: relative;
+}
+.product-set .words{
+  height: 150px;
+  padding: 5px 10px;
+  background-color: rgba(255,255,255,0.8);
+}
+.product-set .title{
+  width: 100%;
+  color: inherit;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: transparent;
+}
+.product-set .desc{
+  height: 150px;
+  padding: 0 10px;
+  font-size: 12px;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.product-item{
+  position: relative;
+  text-decoration: none;
+  height: 160px;
+  overflow: hidden;
+  display: block;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  -webkit-transition: border .2s ease-in-out;
+       -o-transition: border .2s ease-in-out;
+          transition: border .2s ease-in-out;
+}
+
+.product-item h4{
+  line-height: 30px;
+  color: @font;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.product-item .detail{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  background-color: inherit;
+  opacity: 0.8;
+}
+.product-item .detail p{
+  padding: 0 10px 10px 10px;
+  color: @font;
+  font-size: 14px;
+}

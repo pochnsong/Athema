@@ -1,0 +1,65 @@
+{% extends 'shared/base.html' %}
+
+{% block body %}
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div>总计: {{ total }}</div>
+                    <div>错误: {{ error }}</div>
+                    <div>正确: {{ correct }}</div>
+                </div>
+            </div>
+    <div class="row">
+        <div class="col-md-12">
+        <div>单选题</div>
+            {% for x in choice_s %}
+                <div>{{ x.item.title }}</div>
+                <div>
+                    <label>A:{{ x.item.answer_1 }}</label>
+                    <label>B:{{ x.item.answer_2 }}</label>
+                    <label>C:{{ x.item.answer_3 }}</label>
+                    <label>D:{{ x.item.answer_4 }}</label>
+                </div>
+                <div>正确答案:{{ x.item.result }}</div>
+                <div>你的答案:{{ x.yours_answer }}</div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+        <div>多选题</div>
+            {% for x in choice_m %}
+                <div>{{ x.title }}</div>
+                <div>
+                        <label>A:{{ x.item.answer_1 }}</label>
+                    <label>B:{{ x.item.answer_2 }}</label>
+                    <label>C:{{ x.item.answer_3 }}</label>
+                    <label>D:{{ x.item.answer_4 }}</label>
+                </div>
+                <div>正确答案:{{ x.item.result }}</div>
+                <div>你的答案:{{ x.yours_answer }}</div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+        <div>填空题</div>
+            {% for x in fillblank %}
+                <div>{{ x.item.title }}</div>
+                <div>正确答案:{{ x.item.correct }}</div>
+                <div>你的答案:{{ x.yours_answer }}</div>
+            {% endfor %}
+        </div>
+    </div>
+
+            <div class="row">
+        <div class="col-md-12">
+            <a href="{% url 'website:index' %}" class="btn btn-success">返回首页</a>
+        </div>
+            </div>
+</div>
+
+{% endblock %}

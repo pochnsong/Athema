@@ -1,0 +1,21 @@
+label{
+    max-width: inherit;
+}
+.map{
+    position: relative;
+}
+.map h4{
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top: 25px;
+    width: 100%;
+    z-index: 100;
+}
+
+@keyframes pound {
+	50% { top: -30px; }
+}
+.BMap_Marker>div{
+    animation: pound .5s infinite;
+}

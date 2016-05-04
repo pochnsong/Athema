@@ -1,0 +1,294 @@
+@bg-body: #fff;
+@font:#FFF;
+@font-shadow: rgba(255,255,255,0.9);
+@bg0: rgba(255,255,255, 1);
+
+@bg:#00a1e9;
+*{
+  background-color: inherit;
+  color: inherit;
+}
+
+body{
+  color: @bg;
+  background-color: @bg;
+}
+.container{
+  background-color: inherit;
+  color: inherit;
+  position: relative;
+}
+.container-line{
+  position: relative;
+  min-height: 350px;
+  background-color: inherit;
+  color: inherit;
+  overflow: hidden;
+  padding-top: 20px;
+}
+.fg{
+  position: relative;
+}
+.bg{
+  background: @bg0;
+  position: absolute;
+  top:0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.indicator-bg{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top:20px;
+  height: 1px;
+  background: inherit;
+}
+.indicator-tag-bg{
+  display: inline-block;
+  position: absolute;
+  top:0;
+  margin-left: -60px;
+  width: 120px;
+  height: 40px;
+  padding: 0;
+}
+.indicator-tag{
+  position: absolute;
+  top:0;
+  margin-left: -60px;
+  padding: 5px 0;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: inherit;
+  width: 120px;
+  height: 40px;
+}
+
+.header-container{
+  //background: rgba(0,0,0,0.1); /* 标准的语法 */
+  //background-color: @bg;
+  padding: 10px 0 0 0;
+}
+.header-container .bg{
+  background-color: rgba(255,255,255,0.5)
+}
+.header{
+  color: @font;
+  position: relative;
+  height: 80px;
+  overflow: hidden;
+  text-shadow: 0 0 5px @font-shadow;
+}
+.header a{
+  color: @font;
+}
+.header .btn{
+  color: @bg0;
+  font-weight: bold;
+  padding: 5px 10px;
+  text-shadow: none;
+  border: 1px solid @font;
+}
+.header .btn:hover{
+  background-color: rgba(0,0,0,0.1);
+}
+.header .logo{
+  position: absolute;
+  top: 5%;
+  left: 10px;
+  height: 80%;
+}
+.header .logo-word{
+  position: absolute;
+  bottom: 5px;
+  left: 300px;
+  font-size: 38px;
+  font-weight: bold;
+  line-height: 55px;
+}
+
+.links img{
+  margin-bottom: 20px;
+  width: 10%;
+}
+footer{
+  min-height: 300px;
+  color: @font;
+  padding-top: 20px;
+  background: linear-gradient(rgba(255,255,255,0.05), rgba(255,255,255,0)); /* 标准的语法 */
+}
+
+footer .item{
+  height: 200px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+footer .item.title{
+  text-align: center;
+  text-shadow: 0 0 10px @font-shadow;
+
+}
+footer .item a{
+  color: @font;
+}
+footer .item strong{
+  font-weight: 700;
+}
+
+.navbar{
+  margin-bottom: 0;
+}
+
+.errorlist{
+    list-style: none;
+    padding-left: 0;
+    color: red;
+}
+
+.img-bar{
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:  center center;
+}
+.div-img{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:  center center;
+}
+
+.btn-blue{
+  //background-color: inherit;
+  //width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  color:@font;
+  display: block;
+  position: relative;
+  background-color: #00A1E9;
+}
+.btn-blue:hover{
+  //background-color: rgba(0,0,0,0.1);
+  opacity: 0.8;
+  color:@font;
+}
+
+.on-top{
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+.breadcrumb {
+  margin: 10px 0;
+}
+.breadcrumb a{
+  color: inherit;
+  font-weight: bold;
+}
+.navbar-default {
+  background-color: transparent;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+.navbar-default .navbar-brand {
+  color: #777;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #5e5e5e;
+  background-color: transparent;
+}
+.navbar-default .navbar-text {
+  color: #777;
+}
+.navbar-default .navbar-nav > li > a {
+  color: @font;
+  font-weight: bold;
+  text-shadow: 0 0 3px @font-shadow;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #fff;
+  background-color: rgba(0,0,0,0.1);
+  text-shadow: none;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: @font;
+  background-color: #e7e7e7;
+}
+.navbar-default .navbar-nav > .disabled > a,
+.navbar-default .navbar-nav > .disabled > a:hover,
+.navbar-default .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+.navbar-default .navbar-toggle {
+  border-color: @font;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: rgba(0,0,0,0.1);
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: @font;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #e7e7e7;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #777;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333;
+    background-color: transparent;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+  }
+}
+.navbar-default .navbar-link {
+  color: #777;
+}
+.navbar-default .navbar-link:hover {
+  color: #333;
+}
+.navbar-default .btn-link {
+  color: #777;
+}
+.navbar-default .btn-link:hover,
+.navbar-default .btn-link:focus {
+  color: #333;
+}
+.navbar-default .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-default .btn-link:hover,
+.navbar-default .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-default .btn-link:focus {
+  color: @font;
+}

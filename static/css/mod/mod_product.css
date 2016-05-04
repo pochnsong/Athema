@@ -1,0 +1,8 @@
+.product-showcase{
+    text-align: center;
+    background-color: transparent;
+    overflow: hidden;
+}
+.product-showcase img{
+    border: 1px solid #dcdcdc;
+}

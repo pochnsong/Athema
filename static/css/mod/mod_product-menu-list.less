@@ -1,0 +1,132 @@
+//@style-blue-background:#1D365D;
+@bg-body: #fff;
+@bg: #1E92CE;//rgb(27, 67, 90);
+@bg0: #EBF2F9;
+@bg1: #21a1e3;
+@bg2: #1c89c2;
+@font:#fff;
+@font-shadow: rgba(255,255,255,0.3);
+//@bg: #2D4A8C;
+
+.search-container{
+  padding: 20px;
+  height: 80px;
+  width: 100%;
+  padding-left: 60px;
+  position: relative;
+}
+.search-container .search-input{
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  border: none;
+  height: 40px;
+  padding: 0 10px;
+  margin-left: -40px;
+  float: left;
+}
+.search-container .search-btn{
+  display: block;
+  background-color: transparent;
+  border: 1px solid @font;
+  width: 40px;
+  height: 40px;
+  color: @font;
+  border-radius: 0 5px 5px 0;
+  float: left;
+}
+
+.search-container .search-btn:hover{
+  background-color: rgba(0,0,0,0.1);
+}
+
+.product-tag{
+  //padding-top: 15px;
+  float: left;
+  padding: 0;
+  border-top: 1px solid #fff;
+}
+
+.product-tag .active{
+  border: 1px dotted #fff;
+  background-color: rgba(0,0,0,0.1);
+}
+
+#menu-root{
+  width: 100%;
+  list-style: none;
+  padding-left: 0;
+}
+
+.product-tag .item>div{
+  color: @font;
+  position: relative;
+}
+.product-tag .item>div:hover{
+  background-color: rgba(0,0,0,0.1);
+}
+
+.product-tag .item .icon{
+  position: absolute;
+  color: @font;
+  opacity: 0.5;
+}
+
+.product-tag #menu-root>.item>div{
+  padding: 20px 20px 20px 70px;
+}
+.product-tag #menu-root>.item>div>a>.icon{
+  top: 20px;
+  left: 15px;
+  font-size: 40px;
+}
+
+.product-tag .sub-menu>.item>div{
+  padding: 10px 20px 10px 90px;
+}
+.product-tag .sub-menu>.item>div>a>.icon{
+  font-size: 30px;
+  top: 20px;
+}
+
+.product-tag .item a{
+  color: #FFF;
+}
+.product-tag .item .glyphicon{
+  background-color: transparent;
+}
+
+.product-tag .item .glyphicon-menu-down,
+.product-tag .item .glyphicon-menu-right{
+  color: @font;
+  float: right;
+  line-height: 40px;
+  opacity: 0.5;
+}
+
+.product-tag .item .glyphicon-menu-down,
+.product-tag .item .glyphicon-menu-right:hover{
+  cursor: pointer;
+  opacity: 1.0;
+}
+
+.product-tag .item .menu{
+  display: inline-block;
+  background-color: transparent;
+}
+
+.product-tag .item .menu>div:first-child{
+  font-weight: 700;
+  font-size: 14px;
+}
+.product-tag .item .menu>div:last-child{
+  font-size: 1.2rem;
+}
+
+.product-tag .item ul{
+  display: none;
+  width: 100%;
+  list-style: none;
+  padding-left: 0;
+  background-color: rgba(0,0,0,.05);
+}

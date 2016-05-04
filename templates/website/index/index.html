@@ -1,0 +1,16 @@
+{% extends 'shared/base.html' %}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="list-group">
+                <span class="list-group-item active">选择下列题库进行测试</span>
+                {% for x in object_list %}
+                    <a class="list-group-item" href="{% url 'website:testing' x.pk%}">{{ x.name }}</a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

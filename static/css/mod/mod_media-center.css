@@ -1,0 +1,48 @@
+.media-center{
+    text-align: center;
+    width: 100%;
+}
+
+.media-center .video{
+    display: inline-block;
+}
+.vjs-default-skin .vjs-big-play-button{
+    display: inline-block;
+    position: inherit;
+    margin-top: 150px;
+}
+
+.video-list{
+    margin-top: 20px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.video-list .item{
+    display: inline-block;
+    position: relative;
+    margin-bottom: 20px;
+}
+.video-list .item:hover{
+    cursor: pointer;
+}
+.video-list .item .play-link{
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    z-index: 1;
+    color: #fff;
+    background-color: rgba(0,0,0, 0.8);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.video-list .item .title{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0,0,0,0.8);
+    color: #fff;
+}
