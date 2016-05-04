@@ -20,8 +20,8 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 """ User Configuration """
 
-env.user = 'song'
-env.hosts = ['133.130.55.240']
+env.user = ''
+env.hosts = ['']
 """ End of User Configuration """
 
 proj_name = os.path.basename(os.path.dirname(__file__))
